@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weiyu.com.vdhdemo.VDHRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="weiyu.com.vdhdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/dragView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="随意拖拽"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tv_bg"
+        android:padding="20dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/leftdragView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="只能左边拖拽"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tv_bg"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/dragView"
+        android:clickable="true"/>
+
+
+    <TextView
+        android:id="@+id/autobackView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拖拽结束返回原位"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tv_bg"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dragView"/>
+
+</weiyu.com.vdhdemo.VDHRelativeLayout>
