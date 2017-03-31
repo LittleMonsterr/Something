@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="weiyu.com.vrdemo.MainActivity"
+    android:orientation="vertical">
+
+
+    <com.google.vr.sdk.widgets.pano.VrPanoramaView
+        android:id="@+id/vr_pano_view"
+        android:layout_width="368dp"
+        android:layout_height="200dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+    </com.google.vr.sdk.widgets.pano.VrPanoramaView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="以上是图片!"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.google.vr.sdk.widgets.video.VrVideoView
+        android:id="@+id/vr_vidoe_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp">
+
+    </com.google.vr.sdk.widgets.video.VrVideoView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <SeekBar
+            android:id="@+id/vr_video_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="8"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/volume_on"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

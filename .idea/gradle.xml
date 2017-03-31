@@ -9,7 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/utovrdemo" />
             <option value="$PROJECT_DIR$/vdhdemo" />
+            <option value="$PROJECT_DIR$/vrdemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
